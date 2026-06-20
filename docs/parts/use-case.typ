@@ -244,6 +244,12 @@ Exploit the time-frequency structure of the signal without explicit statistical 
   [Use overlapping frames (50 %) to track transient anomalies.],
 )
 
+---
+
+#align(center)[
+  #image("../images/anomaly-detection-fft.svg", width: 65%)
+]
+
 #url-block("codes/anomaly-detection-fft.jl")
 
 ---
@@ -300,5 +306,11 @@ $
     ⚡ *Anomaly detection* — monitor baseline PSD; flag frames where spectral energy in a band exceeds a threshold $gamma$ _(e.g. $mu + 3sigma$ from a reference window)_.
   ],
 )
+
+---
+
+#align(center)[
+  #image("../images/anomaly-detection-psd.svg", width: 65%)
+]
 
 #url-block("codes/anomaly-detection-psd.jl")
